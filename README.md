@@ -6,6 +6,12 @@ This repository contains the policies and guidance for the Ministry of Justice D
 
 ---
 
+# Adding a Policy
+
+To contribute a new policy to this hub, follow our [Adding a New Policy guide](source/policies/adding-a-policy.html.md.erb) for step-by-step instructions on using the MoJ Policy Template.
+
+---
+
 # Developing
 
 ## Requirements

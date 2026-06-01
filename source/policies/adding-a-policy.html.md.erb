@@ -1,0 +1,196 @@
+---
+title: Adding a New Policy
+weight: 30
+last_reviewed: 2026-06-01
+---
+
+# Adding a New Policy
+
+This guide explains how to add a new policy to the Justice Digital Data and Science Policy Hub using the MoJ Policy Template.
+
+---
+
+## Prerequisites
+
+- Access to the repository
+- Understanding of the policy content and requirements
+- Text editor (VS Code recommended)
+
+---
+
+## Step 1: Create a New Policy File
+
+1. Navigate to the `source/policies/` directory
+2. Create a new file named `policy-name.html.md.erb` (use lowercase with hyphens for file names)
+
+Example: `data-protection-policy.html.md.erb`
+
+---
+
+## Step 2: Copy the Template Structure
+
+Start with the basic template frontmatter and sections:
+
+```markdown
+---
+title: Policy Name
+weight: [NUMBER]
+last_reviewed: 2026-06-01
+---
+
+# Policy Name
+
+## Policy Name
+
+**Classification:** OFFICIAL
+
+### Policy Details
+
+| Field | Details |
+|-------|---------|
+| **Policy Identifier** | [Add policy identifier] |
+| **Policy Owner** | [Add policy owner] |
+| **Policy Sponsor** | [Add policy sponsor] |
+| **Date Created** | [Add date] |
+| **Date Last Reviewed** | [Add date] |
+| **Date of Next Review** | [Add date] |
+| **Expiry** | When rescinded or replaced |
+| **Version** | [Add version number] |
+
+---
+
+## [Section Name]
+
+[Content here]
+```
+
+---
+
+## Step 3: Fill in Policy Sections
+
+Complete each section with appropriate content:
+
+### Required Sections
+
+1. **Policy Details Table** - Metadata about the policy
+2. **Purpose** - Why the policy exists and what it aims to achieve
+3. **Scope** - What the policy applies to and what's excluded
+4. **Policy Statements / Principles** - Mandatory rules and principles
+5. **Roles and Responsibilities** - Who is responsible for what
+6. **Monitoring and Compliance** - How adherence is monitored
+7. **Exceptions** - How deviations are approved
+8. **Breach of Policy** - Consequences of non-compliance
+9. **Related Policies and Guidance** - Supporting documentation with links
+10. **Review and Update** - Annual review schedule
+
+---
+
+## Step 4: Add Metadata
+
+Update the frontmatter (the YAML section at the top):
+
+```yaml
+---
+title: [Your Policy Name]
+weight: [50]              # Weight determines navigation order (higher = lower in list)
+last_reviewed: 2026-06-01
+---
+```
+
+**Weight guidance:**
+- 10: Policy Template
+- 20: Service Standards Policy
+- 30+: New policies (increment by 10)
+
+---
+
+## Step 5: Preview Your Policy
+
+Run the preview command to see how your policy looks:
+
+```bash
+make preview
+```
+
+Visit `http://127.0.0.1:4567/policies/` to view your policy in the documentation site.
+
+---
+
+## Step 6: Commit and Push
+
+```bash
+# Stage your new policy file
+git add source/policies/your-policy-name.html.md.erb
+
+# Commit with a descriptive message
+git commit -m "feat: Add [Policy Name] policy"
+
+# Push to the repository
+git push origin main
+```
+
+---
+
+## Policy Naming Conventions
+
+- **File names**: Use lowercase with hyphens (e.g., `data-protection-policy.html.md.erb`)
+- **Policy Identifiers**: Use format `JDDS-POL[NUMBER]` (e.g., JDDS-POL01, JDDS-POL02)
+- **Titles**: Use Title Case for the policy name
+
+---
+
+## Best Practices
+
+### Content Guidelines
+- Keep sections concise and clear
+- Use bullet points for lists
+- Use tables for structured information (like roles and responsibilities)
+- Include links to supporting documentation
+- Use plain language where possible
+
+### Links in Policies
+Format external links like this:
+```markdown
+- [Link Text](https://example.gov.uk/page)
+```
+
+### Dates
+Use format: `DD/MM/YYYY` (e.g., 01/06/2026)
+
+### Tables
+Use markdown tables for structured content:
+```markdown
+| Column 1 | Column 2 |
+|----------|----------|
+| Data     | Data     |
+```
+
+---
+
+## Review Before Publishing
+
+Before pushing to main:
+
+1. **Spell check** - Review for typos and grammar
+2. **Link verification** - Ensure all links are correct and working
+3. **Consistency** - Check formatting matches other policies
+4. **Stakeholder review** - Get approval from policy owner and sponsor
+5. **Accessibility** - Ensure content is accessible and clear
+
+---
+
+## Questions or Support?
+
+For questions about creating policies or using the template:
+
+- **Email**: DigitalStandards@justice.gov.uk
+- **Slack**: #standards-team
+
+---
+
+## Related Resources
+
+- [Policy Template](policy-template.html)
+- [Service Standards Policy Example](service-standards-policy.html)
+- [Accessibility Statement](../accessibility/)
+- [GOV.UK Service Manual](https://www.gov.uk/service-manual)
