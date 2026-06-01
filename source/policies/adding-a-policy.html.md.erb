@@ -6,41 +6,75 @@ last_reviewed: 2026-06-01
 
 # Adding a New Policy
 
-This guide explains how to add a new policy to the Justice Digital Data and Science Policy Hub using the MoJ Policy Template.
+This guide explains how to add a new policy to the Justice Digital Data and Science Policy Hub using GitHub's web interface. **You don't need any special software - just a web browser!**
 
 ---
 
 ## Prerequisites
 
-- Access to the repository
-- Understanding of the policy content and requirements
-- Text editor (VS Code recommended)
+- GitHub account with access to the repository
+- Your policy content ready to add
+- Understanding of the policy details (owner, sponsor, dates, etc.)
 
 ---
 
-## Step 1: Create a New Policy File
+## Step 1: Go to GitHub
 
-1. Navigate to the `source/policies/` directory
-2. Create a new file named `policy-name.html.md.erb` (use lowercase with hyphens for file names)
-
-Example: `data-protection-policy.html.md.erb`
+1. Open your web browser
+2. Go to [https://github.com/ministryofjustice/Justice-Digital-Data-and-Science-Policy-Hub](https://github.com/ministryofjustice/Justice-Digital-Data-and-Science-Policy-Hub)
+3. You should see the repository home page
 
 ---
 
-## Step 2: Copy the Template Structure
+## Step 2: Navigate to the Policies Folder
 
-Start with the basic template frontmatter and sections:
+1. Click on the **Code** tab (near the top of the page)
+2. Look for the folder structure - you'll see folders like `source/`, `config/`, etc.
+3. Click on the `source/` folder
+4. Click on the `policies/` folder inside
+5. You'll now see the existing policy files
 
-```markdown
 ---
-title: Policy Name
-weight: [NUMBER]
+
+## Step 3: Create a New File
+
+1. In the `policies/` folder, click the **Add file** button (top right)
+2. Select **Create new file** from the dropdown menu
+
+---
+
+## Step 4: Name Your Policy File
+
+In the filename field at the top, enter your policy name using this format:
+
+**Format:** `policy-name.html.md.erb`
+
+**Rules:**
+- Use lowercase letters only
+- Use hyphens (-) instead of spaces
+- Always end with `.html.md.erb`
+
+**Examples:**
+- `data-protection-policy.html.md.erb`
+- `information-security-policy.html.md.erb`
+- `accessibility-policy.html.md.erb`
+
+---
+
+## Step 5: Copy and Fill in the Template
+
+Copy this entire template and paste it into the file:
+
+```
+---
+title: [Policy Name]
+weight: [50]
 last_reviewed: 2026-06-01
 ---
 
-# Policy Name
+# [Policy Name]
 
-## Policy Name
+## [Policy Name]
 
 **Classification:** OFFICIAL
 
@@ -48,149 +82,256 @@ last_reviewed: 2026-06-01
 
 | Field | Details |
 |-------|---------|
-| **Policy Identifier** | [Add policy identifier] |
-| **Policy Owner** | [Add policy owner] |
-| **Policy Sponsor** | [Add policy sponsor] |
-| **Date Created** | [Add date] |
-| **Date Last Reviewed** | [Add date] |
-| **Date of Next Review** | [Add date] |
+| **Policy Identifier** | [Add policy identifier, e.g., JDDS-POL02] |
+| **Policy Owner** | [Add policy owner name] |
+| **Policy Sponsor** | [Add policy sponsor name] |
+| **Date Created** | [Add date in DD/MM/YYYY format] |
+| **Date Last Reviewed** | [Add date in DD/MM/YYYY format] |
+| **Date of Next Review** | [Add date in DD/MM/YYYY format] |
 | **Expiry** | When rescinded or replaced |
-| **Version** | [Add version number] |
+| **Version** | [Add version number, e.g., 1.0] |
 
 ---
 
-## [Section Name]
+## Purpose
 
-[Content here]
+[Write 2-3 sentences explaining why this policy exists and what it aims to achieve. Explain how it supports the organisation's objectives.]
+
+---
+
+## Scope
+
+[Explain what the policy applies to. Include details about which departments, processes, and people it covers. Also mention what is NOT included.]
+
+---
+
+## Policy Statements
+
+The following mandatory principles, standards and rules must be followed:
+
+### Principles
+
+1. [Add first principle]
+2. [Add second principle]
+3. [Add additional principles as needed]
+
+---
+
+## Roles and Responsibilities
+
+| Role/Team | Responsibilities |
+|-----------|-----------------|
+| [Role Name] | [What they are responsible for] |
+| [Another Role] | [Their responsibilities] |
+
+### Policy Reviewers
+
+[Name of team/people] will be responsible for reviewing this policy annually, and any ad hoc reviews, to ensure it remains accurate and fit for purpose.
+
+---
+
+## Monitoring and Compliance
+
+[Explain how compliance will be monitored, measured and reported. Include who is responsible for monitoring.]
+
+---
+
+## Exceptions
+
+Any deviations from this policy must be formally approved by the Senior Responsible Owner (SRO). Applications to deviate from the policy must be documented and subject to risk assessment.
+
+---
+
+## Breach of Policy
+
+Policy must be adhered to, and any breaches may result in steps being taken under the MoJ Performance Management Policy.
+
+[Add details about specific consequences of non-compliance if relevant to this policy.]
+
+---
+
+## Related Policies and Guidance
+
+The following policies and guidance support this policy:
+
+- [Link text](https://example.gov.uk)
+- [Another link](https://example.gov.uk)
+
+---
+
+## Review and Update
+
+This policy must be reviewed on an annual basis, or sooner where there are significant changes to regulatory requirements or organisational strategy.
+
+Reviews must be conducted by the policy reviewers and approved by the Policy Owner prior to publication.
 ```
 
 ---
 
-## Step 3: Fill in Policy Sections
+## Step 6: Replace the Template Text
 
-Complete each section with appropriate content:
+Now go through the template and replace all the text in square brackets `[...]` with your actual information:
 
-### Required Sections
+| Replace This | With Your Information |
+|--------------|----------------------|
+| `[Policy Name]` | The name of your policy (e.g., "Data Protection Policy") |
+| `[50]` | A weight number (see Weight Guidance below) |
+| `[JDDS-POL02]` | Your policy identifier number |
+| `[Add policy owner name]` | The person responsible for the policy |
+| `[Add policy sponsor name]` | The senior leader who backs the policy |
+| `[DD/MM/YYYY]` | Dates in this format: 01/06/2026 |
+| Each section content | Your policy text for that section |
 
-1. **Policy Details Table** - Metadata about the policy
-2. **Purpose** - Why the policy exists and what it aims to achieve
-3. **Scope** - What the policy applies to and what's excluded
-4. **Policy Statements / Principles** - Mandatory rules and principles
-5. **Roles and Responsibilities** - Who is responsible for what
-6. **Monitoring and Compliance** - How adherence is monitored
-7. **Exceptions** - How deviations are approved
-8. **Breach of Policy** - Consequences of non-compliance
-9. **Related Policies and Guidance** - Supporting documentation with links
-10. **Review and Update** - Annual review schedule
+### Weight Guidance
 
----
+The weight determines where your policy appears in the list:
+- **10** = Policy Template
+- **20** = Service Standards Policy  
+- **50+** = New policies (use 50, 60, 70, etc.)
 
-## Step 4: Add Metadata
-
-Update the frontmatter (the YAML section at the top):
-
-```yaml
----
-title: [Your Policy Name]
-weight: [50]              # Weight determines navigation order (higher = lower in list)
-last_reviewed: 2026-06-01
----
-```
-
-**Weight guidance:**
-- 10: Policy Template
-- 20: Service Standards Policy
-- 30+: New policies (increment by 10)
+Lower numbers appear higher in the list.
 
 ---
 
-## Step 5: Preview Your Policy
+## Step 7: Preview Your File
 
-Run the preview command to see how your policy looks:
-
-```bash
-make preview
-```
-
-Visit `http://127.0.0.1:4567/policies/` to view your policy in the documentation site.
+As you type, GitHub shows a preview. Look for:
+- Spelling mistakes
+- Proper table formatting (make sure `|` characters are correct)
+- All square brackets `[...]` have been filled in
 
 ---
 
-## Step 6: Commit and Push
+## Step 8: Save Your Draft (Commit)
 
-```bash
-# Stage your new policy file
-git add source/policies/your-policy-name.html.md.erb
-
-# Commit with a descriptive message
-git commit -m "feat: Add [Policy Name] policy"
-
-# Push to the repository
-git push origin main
-```
+1. Scroll down to the bottom of the page
+2. You'll see the **Commit new file** section
+3. In the commit message field, write a brief description:
+   ```
+   Add Data Protection Policy
+   ```
+4. Make sure **Create a new branch for this commit and start a pull request** is selected
+5. Click **Commit new file**
 
 ---
 
-## Policy Naming Conventions
+## Step 9: Create a Pull Request
 
-- **File names**: Use lowercase with hyphens (e.g., `data-protection-policy.html.md.erb`)
-- **Policy Identifiers**: Use format `JDDS-POL[NUMBER]` (e.g., JDDS-POL01, JDDS-POL02)
-- **Titles**: Use Title Case for the policy name
+A pull request page will appear. This is where you ask the team to review your policy before it's published.
+
+1. The title field already has your commit message - that's fine
+2. In the description, add any helpful notes for reviewers:
+   ```
+   This is a new data protection policy following the MoJ guidelines.
+   Policy owner approval is pending.
+   ```
+3. Click **Create pull request**
 
 ---
 
-## Best Practices
+## Step 10: Wait for Review
 
-### Content Guidelines
-- Keep sections concise and clear
+The admin team will now review your policy:
+
+1. They may ask questions or request changes
+2. You'll receive notifications in GitHub
+3. You can respond to comments directly
+4. Once approved, they'll merge your policy
+5. Your policy will automatically appear on the website!
+
+---
+
+## Tips for Writing Your Policy
+
+### Keep it Clear
+- Use short, simple sentences
+- Avoid jargon (explain technical terms if you must use them)
 - Use bullet points for lists
-- Use tables for structured information (like roles and responsibilities)
-- Include links to supporting documentation
-- Use plain language where possible
+- Use plain language
 
-### Links in Policies
-Format external links like this:
-```markdown
-- [Link Text](https://example.gov.uk/page)
+### Formatting
+- **Bold text**: Wrap in `**text**`
+- *Italic text*: Wrap in `*text*`
+- [Links](https://example.com): Use `[Text](URL)`
+
+### Tables
+
+Tables are easy in GitHub. Use this format:
+
+```
+| Column 1 | Column 2 |
+|----------|----------|
+| Your data | More data |
+| Row 2 | Data |
 ```
 
 ### Dates
-Use format: `DD/MM/YYYY` (e.g., 01/06/2026)
 
-### Tables
-Use markdown tables for structured content:
-```markdown
-| Column 1 | Column 2 |
-|----------|----------|
-| Data     | Data     |
-```
+Always use this format: `DD/MM/YYYY`
+
+Examples:
+- 01/06/2026 ✓
+- 1/6/2026 ✗
+- 06/01/2026 ✗
 
 ---
 
-## Review Before Publishing
+## Examples to Review
 
-Before pushing to main:
+Before submitting your policy, look at these examples in the repository:
 
-1. **Spell check** - Review for typos and grammar
-2. **Link verification** - Ensure all links are correct and working
-3. **Consistency** - Check formatting matches other policies
-4. **Stakeholder review** - Get approval from policy owner and sponsor
-5. **Accessibility** - Ensure content is accessible and clear
+- [Service Standards and Service Assessment Policy](service-standards-policy.html)
+- [Policy Template](policy-template.html)
 
 ---
 
-## Questions or Support?
+## Common Questions
 
-For questions about creating policies or using the template:
+### What's the difference between owner and sponsor?
+
+- **Policy Owner**: The person who manages the policy day-to-day and keeps it updated
+- **Policy Sponsor**: A senior leader who approves and supports the policy
+
+### How often should I review the policy?
+
+All policies should be reviewed at least once a year. Set the "Date of Next Review" to be one year from the "Date Created".
+
+### What if I make a mistake?
+
+No problem! You can:
+- Ask the admin team to fix it
+- Make another pull request with corrections
+- They'll help you
+
+### Can I save and come back later?
+
+Unfortunately, GitHub's web editor doesn't have a save draft feature. But you can:
+1. Copy your text to a Word document first
+2. Come back to GitHub and paste it when ready
+3. This way you won't lose your work
+
+---
+
+## Checklist Before Submitting
+
+Before clicking "Create pull request", check:
+
+✓ File name is correct (lowercase with hyphens, ends with `.html.md.erb`)
+✓ All `[...]` placeholders have been replaced
+✓ Policy identifier follows format (JDDS-POL##)
+✓ Dates are in DD/MM/YYYY format
+✓ All tables have proper formatting with `|` characters
+✓ Spelling and grammar are correct
+✓ Links are working (if applicable)
+✓ Policy owner and sponsor have approved the content
+
+---
+
+## Need Help?
+
+Contact the Digital Standards Team:
 
 - **Email**: DigitalStandards@justice.gov.uk
 - **Slack**: #standards-team
 
----
-
-## Related Resources
-
-- [Policy Template](policy-template.html)
-- [Service Standards Policy Example](service-standards-policy.html)
-- [Accessibility Statement](../accessibility/)
-- [GOV.UK Service Manual](https://www.gov.uk/service-manual)
+We're happy to help with any questions!

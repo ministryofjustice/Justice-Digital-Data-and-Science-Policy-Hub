@@ -3,7 +3,7 @@
 
 host: https://ministryofjustice.github.io/Justice-Digital-Data-and-Science-Policy-Hub
 show_govuk_logo: false
-service_name: JDDS Policy Hub
+service_name: Justice Digital and Data Policy Hub
 service_link: /
 header_links:
 enable_search: true
