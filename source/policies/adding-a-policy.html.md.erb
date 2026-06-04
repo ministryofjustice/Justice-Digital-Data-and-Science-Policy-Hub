@@ -1,6 +1,5 @@
 ---
 title: Adding a New Policy
-weight: 30
 owner_slack: "#digital-compliance-team"
 last_reviewed_on: 2026-06-03
 review_in: 6 months
@@ -63,144 +62,43 @@ In the filename field at the top, enter your policy name using this format:
 
 ---
 
-## Step 5: Copy and Fill in the Template
+## Step 5: Use the Policy Template
 
-Copy this entire template and paste it into the file:
+Start with the [Policy Template](/policies/policy-template.html) as your guide. Here's the basic frontmatter to include at the top of your file:
 
 ```
 ---
-title: [Policy Name]
-weight: [50]
+title: [Your Policy Name]
 owner_slack: "#digital-compliance-team"
 last_reviewed_on: 2026-06-03
 review_in: 6 months
 ---
-
-# [Policy Name]
-
-## [Policy Name]
-
-**Classification:** OFFICIAL
-
-### Policy Details
-
-| Field | Details |
-|-------|---------|
-| **Policy Identifier** | [Add policy identifier, e.g., JDDS-POL02] |
-| **Policy Owner** | [Add policy owner name] |
-| **Policy Sponsor** | [Add policy sponsor name] |
-| **Date Created** | [Add date in DD/MM/YYYY format] |
-| **Date Last Reviewed** | [Add date in DD/MM/YYYY format] |
-| **Date of Next Review** | [Add date in DD/MM/YYYY format] |
-| **Expiry** | When rescinded or replaced |
-| **Version** | [Add version number, e.g., 1.0] |
-
----
-
-## Purpose
-
-[Write 2-3 sentences explaining why this policy exists and what it aims to achieve. Explain how it supports the organisation's objectives.]
-
----
-
-## Scope
-
-[Explain what the policy applies to. Include details about which departments, processes, and people it covers. Also mention what is NOT included.]
-
----
-
-## Policy Statements
-
-The following mandatory principles, standards and rules must be followed:
-
-### Principles
-
-1. [Add first principle]
-2. [Add second principle]
-3. [Add additional principles as needed]
-
----
-
-## Roles and Responsibilities
-
-| Role/Team | Responsibilities |
-|-----------|-----------------|
-| [Role Name] | [What they are responsible for] |
-| [Another Role] | [Their responsibilities] |
-
-### Policy Reviewers
-
-[Name of team/people] will be responsible for reviewing this policy annually, and any ad hoc reviews, to ensure it remains accurate and fit for purpose.
-
----
-
-## Monitoring and Compliance
-
-[Explain how compliance will be monitored, measured and reported. Include who is responsible for monitoring.]
-
----
-
-## Exceptions
-
-Any deviations from this policy must be formally approved by the Senior Responsible Owner (SRO). Applications to deviate from the policy must be documented and subject to risk assessment.
-
----
-
-## Breach of Policy
-
-Policy must be adhered to, and any breaches may result in steps being taken under the MoJ Performance Management Policy.
-
-[Add details about specific consequences of non-compliance if relevant to this policy.]
-
----
-
-## Related Policies and Guidance
-
-The following policies and guidance support this policy:
-
-- [Link text](https://example.gov.uk)
-- [Another link](https://example.gov.uk)
-
----
-
-## Review and Update
-
-This policy must be reviewed on an annual basis, or sooner where there are significant changes to regulatory requirements or organisational strategy.
-
-Reviews must be conducted by the policy reviewers and approved by the Policy Owner prior to publication.
 ```
 
----
+Then follow the structure and sections defined in the [Policy Template](/policies/policy-template.html) page, replacing all placeholders `[...]` with your actual content.
 
-## Step 6: Replace the Template Text
+### Key Sections to Include
 
-Now go through the template and replace all the text in square brackets `[...]` with your actual information:
+Your policy should contain these sections (use the template as reference):
 
-| Replace This | With Your Information |
-|--------------|----------------------|
-| `[Policy Name]` | The name of your policy (e.g., "Data Protection Policy") |
-| `[50]` | A weight number (see Weight Guidance below) |
-| `"#digital-compliance-team"` | Leave as-is unless you have a different Slack channel |
-| `2026-06-03` | Today's date in YYYY-MM-DD format (e.g., 2026-06-03) |
-| `6 months` | How often the policy should be reviewed (e.g., `6 months`, `1 year`) |
-| `[JDDS-POL02]` | Your policy identifier number |
-| `[Add policy owner name]` | The person responsible for the policy |
-| `[Add policy sponsor name]` | The senior leader who backs the policy |
-| `[DD/MM/YYYY]` | Dates in this format: 01/06/2026 |
-| Each section content | Your policy text for that section |
+1. **Policy Details** – A table with identifier, owner, sponsor, dates, version
+2. **Purpose** – Why the policy exists and what it aims to achieve
+3. **Scope** – What and who the policy applies to
+4. **Policy Statements** – The mandatory principles, standards and rules
+5. **Roles and Responsibilities** – Who is responsible for what
+6. **Monitoring and Compliance** – How adherence will be measured
+7. **Exceptions** – How deviations can be approved
+8. **Breach of Policy** – Consequences of non-compliance
+9. **Related Policies and Guidance** – Links to supporting documentation
+10. **Review and Update** – When and how the policy will be reviewed
 
-### Weight Guidance
+### Automatic Navigation
 
-The weight determines where your policy appears in the list:
-- **10** = Policy Template
-- **20** = Service Standards Policy  
-- **50+** = New policies (use 50, 60, 70, etc.)
-
-Lower numbers appear higher in the list.
+**Good news:** Your new policy will automatically appear in the side navigation once you add it to the `policies/` folder. You don't need to manually configure anything—the system automatically discovers all policy files and includes them in the navigation menu.
 
 ---
 
-## Step 7: Preview Your File
+## Step 6: Preview Your File
 
 As you type, GitHub shows a preview. Look for:
 - Spelling mistakes
@@ -209,7 +107,7 @@ As you type, GitHub shows a preview. Look for:
 
 ---
 
-## Step 8: Save Your Draft (Commit)
+## Step 7: Save Your Draft (Commit)
 
 1. Scroll down to the bottom of the page
 2. You'll see the **Commit new file** section
@@ -222,7 +120,7 @@ As you type, GitHub shows a preview. Look for:
 
 ---
 
-## Step 9: Create a Pull Request
+## Step 8: Create a Pull Request
 
 A pull request page will appear. This is where you ask the team to review your policy before it's published.
 
@@ -236,7 +134,7 @@ A pull request page will appear. This is where you ask the team to review your p
 
 ---
 
-## Step 10: Wait for Review
+## Step 9: Wait for Review
 
 The admin team will now review your policy:
 
