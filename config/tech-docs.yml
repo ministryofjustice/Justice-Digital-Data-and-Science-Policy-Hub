@@ -1,7 +1,7 @@
 ---
 # https://github.com/alphagov/tech-docs-gem/blob/main/example/config/tech-docs.yml
 
-host: https://ministryofjustice.github.io/Justice-Digital-Data-and-Science-Policy-Hub
+host: https://ministryofjustice.github.io/JDDS-Policy-Hub
 show_govuk_logo: false
 service_name: Justice Digital and Data Policy Hub
 service_link: /
@@ -11,7 +11,7 @@ collapsible_nav: true
 max_toc_heading_level: 3
 prevent_indexing: true
 show_contribution_banner: true
-github_repo: ministryofjustice/Justice-Digital-Data-and-Science-Policy-Hub
+github_repo: ministryofjustice/JDDS-Policy-Hub
 github_branch: main
 full_service_name: Justice Digital Data and Science Policy Hub
 show_expiry: true
