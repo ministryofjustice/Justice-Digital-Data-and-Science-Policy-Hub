@@ -6,7 +6,9 @@ show_govuk_logo: false
 service_name: Justice Digital and Data Policy Hub
 service_link: /
 header_links:
+  Policies: /policies/
 enable_search: true
+multipage_nav: true
 collapsible_nav: true
 max_toc_heading_level: 3
 prevent_indexing: true

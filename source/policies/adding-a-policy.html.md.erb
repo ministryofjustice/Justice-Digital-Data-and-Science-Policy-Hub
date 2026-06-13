@@ -3,6 +3,7 @@ title: Adding a New Policy
 owner_slack: "#digital-compliance-team"
 last_reviewed_on: 2026-06-03
 review_in: 6 months
+weight: 24
 ---
 
 # Adding a New Policy
@@ -94,7 +95,16 @@ Your policy should contain these sections (use the template as reference):
 
 ### Automatic Navigation
 
-**Good news:** Your new policy will automatically appear in the side navigation once you add it to the `policies/` folder. You don't need to manually configure anything—the system automatically discovers all policy files and includes them in the navigation menu.
+Your new policy page is automatically discovered from the `policies/` folder and included in site navigation.
+
+### Manual Updates Still Required
+
+After creating a new policy file, you must still do the following:
+
+1. Set a `policy_id` value in frontmatter (for example, `JDDS-POL02`) so the policy is automatically listed on the **Current Policies** section.
+2. Set a `weight` value in frontmatter so it appears in the intended order in navigation.
+
+You do **not** need to manually edit global navigation config for each new policy.
 
 ---
 

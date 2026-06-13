@@ -3,6 +3,7 @@ title: Policies
 owner_slack: "#digital-compliance-team"
 last_reviewed_on: 2026-06-03
 review_in: 6 months
+weight: 20
 ---
 
 # Policies
@@ -11,7 +12,17 @@ This section contains Ministry of Justice Digital, Data and Science policies and
 
 ## Current Policies
 
-- [Service Standards and Service Assessment Policy](service-standards-policy.html) - JDDS-POL01
+<% current_policies = sitemap.resources
+	.select { |resource| resource.path.start_with?("policies/") && resource.path.end_with?(".html") && resource.data.policy_id }
+	.sort_by { |resource| [resource.data.weight || 9999, resource.data.title.to_s] } %>
+
+<% if current_policies.any? %>
+<% current_policies.each do |policy| %>
+- [<%= policy.data.title %>](<%= policy.path.sub("policies/", "") %>) - <%= policy.data.policy_id %>
+<% end %>
+<% else %>
+- No current policies published yet.
+<% end %>
 
 ---
 
