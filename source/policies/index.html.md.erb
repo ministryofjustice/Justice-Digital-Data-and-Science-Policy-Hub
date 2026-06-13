@@ -3,7 +3,6 @@ title: Policies
 owner_slack: "#digital-compliance-team"
 last_reviewed_on: 2026-06-03
 review_in: 6 months
-weight: 20
 ---
 
 # Policies
@@ -14,7 +13,11 @@ This section contains Ministry of Justice Digital, Data and Science policies and
 
 <% current_policies = sitemap.resources
 	.select { |resource| resource.path.start_with?("policies/") && resource.path.end_with?(".html") && resource.data.policy_id }
-	.sort_by { |resource| [resource.data.weight || 9999, resource.data.title.to_s] } %>
+	.sort_by do |resource|
+		policy_id = resource.data.policy_id.to_s
+		policy_number = policy_id[/\d+/].to_i
+		[policy_number, policy_id, resource.data.title.to_s]
+	end %>
 
 <% if current_policies.any? %>
 <% current_policies.each do |policy| %>
