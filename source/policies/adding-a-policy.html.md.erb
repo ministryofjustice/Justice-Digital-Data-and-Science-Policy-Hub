@@ -69,6 +69,7 @@ Start at [Choose a Policy Template](/policies/choose-a-template.html) to confirm
 ```
 ---
 title: [Your Policy Name]
+policy_id: JDDS-POL##
 owner_slack: "#digital-compliance-team"
 last_reviewed_on: 2026-06-03
 review_in: 6 months
@@ -151,6 +152,34 @@ The admin team will now review your policy:
 3. You can respond to comments directly
 4. Once approved, they'll merge your policy
 5. Your policy will automatically appear on the website!
+
+---
+
+## Amending an Existing Policy
+
+Use these steps when you need to update a policy that already exists.
+
+1. Go to the repository on GitHub and open `source/policies/`.
+2. Click the policy file you want to change.
+3. Click the pencil icon (**Edit this file**).
+4. Update the content and any relevant frontmatter values (for example review dates).
+5. Keep the existing `policy_id` the same for that policy.
+6. Scroll down and commit your change to a new branch.
+7. Open a pull request for review, then merge once approved.
+
+---
+
+## Deleting a Policy
+
+Use these steps if a policy should be removed from the hub.
+
+1. Go to the repository on GitHub and open `source/policies/`.
+2. Open the policy file you want to remove.
+3. Click the trash icon (**Delete this file**).
+4. Scroll down and commit the deletion to a new branch.
+5. Open a pull request for review, then merge once approved.
+
+Once merged, the policy page is removed and it no longer appears in the automatic **Current Policies** list or policy navigation.
 
 ---
 
